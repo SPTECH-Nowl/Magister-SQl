@@ -1,0 +1,48 @@
+.btn {
+   padding-block: 0.4rem;
+   border-radius: 30px;
+   width: 15rem;
+   border: none;
+   font-family: var(--font-title);
+   font-weight: 500;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: .3s ease-in-out;
+}
+
+.btn:hover {
+   filter: brightness(1.2);
+}
+
+.btn.primario {
+   background-color: var(--color-purple-500);
+   color: var(--color-gray-100);
+   border: 2px solid var(--color-purple-500);
+}
+
+
+.btn.primario.processo {
+   background-color: var(--color-purple-500);
+   color: var(--color-gray-100);
+   border: 2px solid var(--color-purple-500);
+   margin-right: 1%;
+}
+
+.btn.primario.escola {
+   background-color: var(--color-purple-500);
+   color: var(--color-gray-100);
+   border: 2px solid var(--color-purple-500);
+   margin-right: 2%;
+}
+
+.btn.secundario {
+   background-color: var(--color-purple-700);
+   color: var(--color-gray-100);
+   border: 2px solid var(--color-purple-700);
+}
+
+.btn.terciario {
+   background-color: transparent;
+   color: var(--color-purple-500);
+   border: 2px solid var(--color-purple-500);
+}

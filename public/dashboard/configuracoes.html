@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../styles/global.css">
+   <link rel="stylesheet" href="../styles/configuracoes.css">
+   <link rel="shortcut icon" href="../assets/img/Logos/magisterLogo.svg" type="image/x-icon">
+  
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   
+   <script src="../scripts/funcoes.js"></script>
+
+<!-- Inclua a biblioteca Tippy.js -->
+<script src="https://unpkg.com/tippy.js@6.3.4/dist/tippy-bundle.umd.min.js"></script>
+
+
+ <!-- BACK END DE USUARIO-->
+   <script src="../scripts/configuracoes.js" defer></script>
+
+
+   <!-- Phosphor Icons -->
+   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+   <!-- JQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!-- Shoelace -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/themes/light.css" />
+   <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/shoelace-autoloader.js"></script>
+   <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/components/select/select.js"></script>
+   
+   <!-- Componentes -->
+   <script src="../components/input/input.js" defer></script>
+   <link rel="stylesheet" href="../components/input/input.css">
+
+   <script src="../components/button/button.js" defer></script>
+   <link rel="stylesheet" href="../components/button/button.css">
+
+   <script src="../components/navbar/navbar.js" defer></script>
+   <link rel="stylesheet" href="../components/navbar/navbar.css">
+
+   <script src="../components/dialog/dialog.js" defer></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+   
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   
+
+   <title>Magister | Configurações</title>
+
+</head>
+<body>
+   
+   <sl-drawer id="Drawer" label="Drawer" class="drawer-focus">
+    
+    <sl-button slot="footer" variant="primary"></sl-button>
+  </sl-drawer>
+
+
+  <div class="side-menu">
+   <img src="../assets/img/elements/wave-menu.svg" alt="" class="wave-menu">
+
+   <img src="../assets/img/Logos/logoMagister.svg" alt="" class="logo-nav">
+
+   <ul class="nav-list">
+
+      <li id="dash_geral_item">
+         <sl-tooltip content="Dashboard Geral" placement="right">
+            <a href="dashboard_geral.html">
+               <img src="../assets/img/elements/dash.svg" alt="">
+            </a>
+         </sl-tooltip>
+      </li>
+   
+      <li id="maquinas_organizacao_item">
+         <sl-tooltip content="Maquinas de organização" placement="right">
+            <a href="maquinas_organizacao.html">
+               <img src="../assets/img/elements/pc.svg" alt="">
+            </a>
+         </sl-tooltip>
+      </li>
+   
+      <li id="programas_item">
+         <sl-tooltip content="Programas" placement="right">
+            <a href="processo.html">
+               <img src="../assets/img/elements/programa.svg" alt="">
+            </a>
+         </sl-tooltip>
+      </li>
+
+      <li id="permissao_item">
+         <sl-tooltip content="Permissões" placement="right">
+            <a href="permissao.html">
+               <img src="../assets/img/elements/shield-check.svg" alt="">
+            </a>
+         </sl-tooltip>
+      </li>
+
+      <li id="instituicoes_item">
+         <sl-tooltip content="Instituições" placement="right">
+            <a href="escola.html">
+               <img src="../assets/img/elements/graduation-cap.svg" alt="">
+            </a>
+         </sl-tooltip>
+      </li>
+
+      <li id="usuarios_item">
+         <sl-tooltip content="Usuários" placement="right">
+            <a href="usuarios.html">
+               <img src="../assets/img/elements/usuario.svg" alt="">
+            </a>
+         </sl-tooltip>
+      </li>
+
+      <li id="strikes_item">
+         <sl-tooltip content="Strikes" placement="right">
+            <a href="strikes.html">
+               <img src="../assets/img/elements/strike.svg" alt="">
+            </a>
+         </sl-tooltip>
+      </li>
+   </ul>
+   
+
+   <ul>
+      <li id="sair_item">
+         <sl-tooltip content="Sair" placement="right"  id="sairLink">
+            <a href="../login_cadastro.html">
+               <img src="../assets/img/elements/sign-out.svg" alt="">
+            </a>
+         </sl-tooltip>
+      </li>
+      <li>
+          <sl-tooltip content="Configurações" placement="right">
+              <a href="configuracoes.html" id="sairLink">
+                  <img src="../assets/img/elements/settings.svg" alt="">
+              </a>
+          </sl-tooltip>
+      </li>
+  </ul>
+</div>
+
+<div class="config-container">
+<div class="left-content">
+    <div class="user-config">
+        <h1>Configurações de usuário</h1>
+        
+        <div class="input-container">
+                <div class="config-input">
+                    <sl-input class="config-input" label="Nome de usuario" placeholder="Nome de usuario" size="large" pill id="nomeFuncionario"></sl-input>
+                </div>
+                <div class="config-input">
+                    <sl-input class="config-input" label="E-mail" placeholder="socorrojesus@gmail.com" size="large" pill id="emailFuncionario"></sl-input>
+                </div>
+                <div class="config-input">
+                    <sl-input class="config-input" help-text="" label="Senha" type="password" placeholder="Senha" size="large" pill password-toggle id="senhaFuncionario"></sl-input>
+                </div>
+                <div class="config-input">
+                    <sl-input class="config-input invalid" label="Permissão" type="text" placeholder="Permissão" size="large" pill  id="permissaoFuncionario" disabled></sl-input>
+                </div>
+
+        </div>
+
+        <sl-button class="confirm-button" size="large" pill onclick="atualizarDados(idFuncionario)">Salvar</sl-button>
+
+    </div>
+
+    <div class="strike-config">
+        <h1>Configurações de permissão</h1>
+
+        <div class="select-config-wrapper">
+            
+            <sl-select class="select-config" size="large" value="option-1" pill label="Permissões" id="permissoesSelect">
+              <sl-option disabled value="option-1">Selecione uma permissão</sl-option>
+            </sl-select>
+            
+            
+            <sl-drawer label="Adicionar nova permissão" class="drawer-overview drawerAdd" id="adicionarPermissao">
+                
+                <sl-input label="Nome da permissão"  size="large" pill id="nomePermissao"></sl-input>
+
+                <sl-select class="select-config" size="large" value="option-1" pill label="Ação padrão" id="acoesSelectAdd">
+                    <sl-option disabled value="option-1">Selecione uma ação</sl-option>
+                </sl-select>
+
+                <sl-input placeholder="00:00" label="Tempo de strike padrão" size="large" type="text" pill id="tempoPadraoPermissao"></sl-input>
+
+                <sl-button onclick="criarPermissao()" class="confirm-button" size="large" pill>Adicionar</sl-button>
+
+            </sl-drawer>
+
+              <sl-button class="confirm-button" size="large" pill>Adicionar</sl-button>
+              
+              <script>
+                const drawerPermissao = document.querySelector('#adicionarPermissao');
+
+                const openButtonPermissao = drawerPermissao.nextElementSibling;
+
+                openButtonPermissao.addEventListener('click', () => drawerPermissao.show());
+
+              </script>
+
+            
+
+      </div>
+        
+        <div class="select-config-wrapper">
+            
+              <sl-select  class="select-config" size="large" value="option-1" pill label="Ação padrão" id="acoesSelect" help-text ="">
+                <sl-option  disabled value="option-1">Selecione uma ação</sl-option>
+              </sl-select>
+              
+
+              <sl-drawer label="Adicionar nova permissão" class="drawer-overview drawerAdd" id="adicionarAcao">
+                
+                <sl-input label="Nome da ação"  size="large" pill id="nomeAcao"></sl-input>
+
+                <sl-input label="Descrição da ação" size="large" pill id="descricaoAcao"></sl-input>
+
+                <sl-button onclick="criarAcao()" class="confirm-button" size="large" pill>Adicionar</sl-button>
+
+            </sl-drawer>
+
+              <sl-button style="align-self: end !important" class="confirm-button" size="large" pill>Adicionar</sl-button>
+              
+              <script>
+                const drawer = document.querySelector('#adicionarAcao');
+
+                const openButton = drawer.nextElementSibling;
+              
+                openButton.addEventListener('click', () => drawer.show());
+               
+              </script>
+
+        </div>
+
+        <sl-input id="tempoPadraoInput" label="Tempo padrão de strike" type="text" placeholder="00:00"  size="large" pill></sl-input>
+
+
+        
+        <sl-button onclick="atualizarDadosPermissao()" class="confirm-button" size="large" pill>Salvar</sl-button>
+
+    </div>
+
+</div>
+
+<!-- <div class="right-content">
+
+</div> -->
+</div>
+
+
+
+
+</body>
+</html>
+
+<script>
+   document.addEventListener("DOMContentLoaded", ()=>{
+      validarAcesso(2);
+   });
+</script>

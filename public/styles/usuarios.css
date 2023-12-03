@@ -1,0 +1,242 @@
+body {
+    display: flex;
+    font-family: var(--font-text);
+}
+
+ .center-button {
+   display: block;
+   margin: 0 auto;
+}
+
+
+.valid-input {
+   border: 1px solid #4CAF50; 
+}
+
+.invalid-input {
+   border: 1px solid #FF5555; 
+}
+
+.charts-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    padding: 1.5rem 3.5rem;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    border: 1px solid #cfcece;
+    border-radius: 12px;
+ }
+ 
+ .charts-container h1 {
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    font-size: 2.3rem;
+    margin: 0;
+    padding: 0;
+    color: #6D499D;
+ }
+ 
+ .top-users {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+ 
+ .container-selects {
+    display: flex;
+    box-sizing: border-box;         
+    align-items: center;
+    justify-content: space-around;
+ }
+ 
+ .charts-content {
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 8px;
+    height: 100%;
+ }
+ 
+ .chart-grid {
+    display: grid;
+    gap: 1rem;
+    height: 100%;
+ }
+ 
+ table {
+    width: 100%;
+    border-spacing: 0;
+ }
+
+ .tableWrapper{
+    border-radius: 16px;
+    max-height: 100%;
+    position: relative;
+    overflow: scroll;
+    height: 80vh;
+ }
+
+ .tableWrapper::-webkit-scrollbar{
+    display: none;
+ }
+
+ thead{
+    border-bottom: 2px solid #9ca3af;
+    background: linear-gradient(45deg, #6D499D 20.16%, #9747FF 90%);  
+    position: sticky;
+    top: 0;
+ }
+
+
+
+ tbody{
+    background: #EBEBEB;
+    max-height: 100%;
+ }
+
+
+ 
+ th {
+    padding: 1rem 2rem;
+    text-align: start;
+    font-family: var(--font-title);
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+ }
+
+ td{
+    padding: 1rem 2rem;
+    text-align: start;
+    font-weight: 400;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    font-weight: 400;
+ }
+
+ td img{
+   cursor: pointer;
+ }
+
+td:nth-child(1), th:nth-child(1){
+    width: 20%;
+    max-width: 20%;
+ }
+ td:nth-child(2), th:nth-child(2){
+    width: 45%;
+    max-width: 45%;
+ }
+ td:nth-child(3), th:nth-child(3){
+    width: 20%;
+    max-width: 20%;
+ }
+ td:nth-child(4), th:nth-child(4){
+    width: 15%;
+    max-width: 10%;
+    display: flex;
+    gap: 5px;
+ }
+
+ #orderOptions span{
+   cursor: pointer;
+   color: var(--color-blue-500);
+   font-weight: 700;
+ }
+
+ 
+#orderOptions span:hover {
+   text-decoration: underline;
+}
+
+ .pesquisarEAdd {
+   width: 95%;
+ }
+
+
+ tbody tr:nth-child(even) {
+    background-color: #EBEBEB;
+ }
+ 
+ tr {
+    overflow: hidden;
+ }
+
+ 
+.btn-crud {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 3vh;
+   color: #FFF;
+   background: transparent;
+   border: 1px solid #FFF;
+   border-radius: 5px;
+   padding: 5px;
+   margin-bottom: 2px;
+   transition: 0.5s ease-in;
+   outline: none;
+   cursor: pointer;
+}
+
+.red {
+   color: #FF5555;
+   border-color: #FF5555;
+}
+
+.green {
+   color: #74C365;
+   border-color: #489e37;
+}
+
+.blue {
+   color: cornflowerblue;
+   border-color: rgb(75, 135, 245);
+}
+
+.btn-crud.red:hover {
+   color: #FFF;
+   background: #FF5555;
+   transition: 0.5s ease-in;
+}
+
+.btn-crud.green:hover {
+   color: #FFF;
+   background: #74C365;
+   transition: 0.5s ease-in;
+}
+
+.btn-crud.blue:hover {
+   color: #FFF;
+   background: cornflowerblue;
+   transition: 0.5s ease-in;
+}
+
+
+/* Estilo do tooltip para a ação "Excluir" (vermelho) */
+.tippy-popper.delete-action {
+   background-color: #FF5555 !important; /* Cor de fundo vermelha com !important */
+   color: #fff !important; /* Cor do texto branco com !important */
+   border: 2px solid #FF5555 !important; /* Borda vermelha com !important */
+}
+
+/* Estilo do tooltip para a ação "Editar" (verde) */
+.tippy-popper.edit-action {
+   background-color: #4CAF50 !important; /* Cor de fundo verde com !important */
+   color: #fff !important; /* Cor do texto branco com !important */
+   border: 2px solid #4CAF50 !important; /* Borda verde com !important */
+}
+
+/* Estilo do tooltip para a ação "Mais Informações" (azul) */
+.tippy-popper.info-action {
+   background-color: #3498db !important; /* Cor de fundo azul com !important */
+   color: #fff !important; /* Cor do texto branco com !important */
+   border: 2px solid #3498db !important; /* Borda azul com !important */
+}
+
+
+.tippy-popper {
+   z-index: 9999; /* Ajuste o z-index conforme necessário */
+}

@@ -1,0 +1,26 @@
+.custom-modal-content {
+    background-color: #6D499D;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #6D499D; 
+    max-width: 600px;
+    width: 90%;
+}
+
+
+
+.sl-alert[type="success"] .sl-alert-icon {
+    color: #FFFFFF;
+}
+
+
+.sl-alert[type="success"] .sl-alert-button {
+    background-color: #6D499D; 
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

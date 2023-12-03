@@ -1,0 +1,110 @@
+sl-select {
+   width: fit-content;
+   border-radius: 30px;
+   background-color: #bfbfbf;
+}
+
+sl-select[filter]::part(form-control) {
+   width: 12rem;
+}
+
+sl-select[multiple]::part(form-control) {
+   width: fit-content;
+}
+
+sl-select[filter]::part(combobox) {
+   outline: none;
+   box-shadow: none;
+   background-color: transparent;
+}
+
+sl-select[filter]::part(display-input) {
+   width: fit-content;
+   color: white;
+   font-family: var(--font-title);
+   text-overflow: ellipsis !important;
+}
+
+sl-select[filter]::part(display-input)::placeholder {
+   color: var(--color-gray-100);
+   font-family: var(--font-title);
+}
+
+sl-select[filter]::part(listbox) {
+   border-radius: 12px;
+   background-color: var(--color-gray-100);
+}
+
+sl-select[filter]::part(listbox)::-webkit-scrollbar {
+   width: 5px;
+}
+
+sl-select[filter]::part(listbox)::-webkit-scrollbar-track {
+   background-color: var(--color-branco);
+}
+
+sl-select[filter]::part(listbox)::-webkit-scrollbar-thumb {
+   background-color: var(--color-violeta);
+   border-radius: 5px;
+}
+
+sl-option::part(base) {
+   background-color: var(--color-gray-100);
+   color: #0D0D0D;
+}
+
+sl-option::part(base):hover {
+   background-color: var(--color-purple-500);
+   color: var(--color-gray-100);
+}
+
+sl-select[filter]::part(clear-button),
+sl-select[filter]::part(expand-icon) {
+   color: var(--color-gray-100);
+}
+
+sl-select[multiple]::part(tag__base) {
+   background-color: var(--color-purple-700);
+   border: none;
+   box-shadow: inset ;
+}
+
+sl-select[multiple]::part(tag__content) {
+   color: var(--color-gray-100);
+   font-weight: bold;
+   font-family: var(--font-text);
+}
+
+sl-select[multiple]::part(tag__remove-button){
+   color: var(--color-gray-100);
+}
+
+sl-select[acoes]::part(form-control) {
+   width: 100%;
+} 
+
+sl-select[acoes] {
+   width: 100%;
+}
+
+sl-select[acoes]::part(display-input) {
+   color: white;
+   font-family: var(--font-title);
+   text-overflow: ellipsis !important;
+}
+
+sl-select[acoes]::part(display-input)::placeholder {
+   color: var(--color-gray-100);
+   font-family: var(--font-title);
+}
+
+sl-select[acoes]::part(combobox) {
+   outline: none;
+   box-shadow: none;
+   background-color: transparent;
+}
+
+sl-select[acoes]::part(clear-button),
+sl-select[acoes]::part(expand-icon) {
+   color: var(--color-gray-100);
+}
